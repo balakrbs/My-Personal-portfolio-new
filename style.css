@@ -198,6 +198,10 @@ header.sticky .nav-bar {
   align-items: center;
   width: 100%;
 }
+.home-container{
+  margin-top: 3.5em;
+  padding: 10px;
+}
 .home-container .media-icons {
   display: flex;
   flex-direction: column;
@@ -266,7 +270,7 @@ header.sticky .nav-bar {
   color: var(--first-color);
   font-size: var(--normal-font-size);
   font-weight: 500;
-  margin-top: 20px;
+  margin-top:100px;
 }
 .home .scroll-down i {
   margin-left: 4px;
@@ -296,6 +300,7 @@ header.sticky .nav-bar {
   margin-left: auto;
   margin-right: auto;
   padding: 6rem 2rem 2rem;
+  overflow: hidden;
 }
 .sub-section {
   position: relative;
@@ -342,7 +347,6 @@ header.sticky .nav-bar {
 }
 .about-img img {
   max-width: 100%;
-  min-width: 500px;
   border-radius: 10px;
 }
 .about-info .description {
@@ -959,7 +963,7 @@ footer a {
   .nav-items {
     position: relative;
     background: var(--model-bg-color);
-    width: 500px;
+    width: 600px;
     max-width: 600px;
     display: flex;
     align-items: center;
@@ -969,7 +973,7 @@ footer a {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     transform: translateY(-50px);
-    transition: 0.3s ease;
+    transition: .3s ease;
   }
   .navigation.active .nav-items {
     transform: translateY(0);
@@ -983,8 +987,8 @@ footer a {
     /* filter: var(--color-filter); */
     background-size: 15px;
     background-position: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     top: 0;
     right: 0;
     margin: 10px;
@@ -1083,7 +1087,7 @@ footer a {
 }
 /* ========Media query max-width 730px========= */
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 600px) {
   /* ========Common style for all sections========= */
   body {
     margin: 5rem 0 0 0;
@@ -1100,12 +1104,15 @@ footer a {
 .home .home-container{
   display: grid;
 }
+.home-container{
+  margin-top: -5em;
+}
 .home-container .home-img{
   position: absolute;
 }
 .home-container .home-img img{
-  width: 65%;
-  margin-left: 0px;
+  width: 70%;
+  margin-left: -30px;
   transform: translate(80px, -180px);
 }
 .home .home-container .info{
@@ -1115,10 +1122,15 @@ footer a {
   margin-bottom: 80px;
 }
 .home-container .info h2 {
-  font-size: 2.3em;
+  font-size: 2em;
 }
 .home-container .info h2 .name {
-  font-size: 1.4em;
+  font-size: 1.35em;
+}
+
+.home .scroll-down {
+
+  margin-top:10px;
 }
 /* ========Get-in-touch section========= */
 .get-in-touch .contact-card{

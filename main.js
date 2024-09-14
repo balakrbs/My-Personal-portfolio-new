@@ -151,13 +151,15 @@ ScrollReveal().reveal(".home .info h2, .section-title-01, .section-title-02", {
   delay: 500,
   origin: "left"
 });
-ScrollReveal().reveal(".home .info h3, .home .info p, .about-info .btn, .theme-btn", {
+ScrollReveal().reveal(".home .info h3, .home .info p, .theme-btn", {
   delay: 600,
   origin: "right",
+  easing:'ease-in-out',
+  distance:'10px',
   interval: 200
 });
 
-ScrollReveal().reveal(".home .info .btn", {
+ScrollReveal().reveal(".home .info .btn, .about-info .btn", {
   delay: 700,
   origin: "bottom",
   interval: 300
@@ -175,23 +177,31 @@ ScrollReveal().reveal(".home-img, .about-img", {
 
 ScrollReveal().reveal(".about .description, .copy-right", {
   delay: 600,
+  easing:'ease-in-out',
+  distance:'10px',
   origin: "right"
 });
 
 ScrollReveal().reveal(".about .professional-list li, .about .professional-list", {
   delay: 500,
   origin: "right",
+  easing:'ease-in-out',
+  distance:'10px',
   interval: 200
 });
 
 ScrollReveal().reveal(".skills-description, .services-description, .contact-left h2", {
   delay: 700,
+  easing:'ease-in-out',
+  distance:'10px',
   origin: "right"
 });
 
 ScrollReveal().reveal(".contact-right p, input, textarea", {
   delay: 700,
   origin: "right",
+  easing:'ease-in-out',
+  distance:'10px',
   interval:200
 });
 ScrollReveal().reveal(".contact-right p", {
