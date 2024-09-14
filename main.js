@@ -136,6 +136,31 @@ navItems.forEach((navItem) => {
   });
 });
 
+//contact Email Message
+
+function sendMail(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  let params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs
+    .send("service_toz1f4h", "template_cjerzap", params)
+    .then(() => {
+      alert("Email Sent!!");
+      location.reload(); // Reset the form fields
+
+      // Optional: Reload the page if you want full refresh
+      // location.reload();
+    })
+    .catch((error) => {
+      console.error("Email sending failed:", error);
+    });
+}
 //scroll reveal animations
 //common reveal options to create reveal animations
 ScrollReveal({
@@ -149,75 +174,87 @@ ScrollReveal({
 
 ScrollReveal().reveal(".home .info h2, .section-title-01, .section-title-02", {
   delay: 500,
-  origin: "left"
+  origin: "left",
 });
 ScrollReveal().reveal(".home .info h3, .home .info p, .theme-btn", {
   delay: 600,
   origin: "right",
-  easing:'ease-in-out',
-  distance:'10px',
-  interval: 200
+  easing: "ease-in-out",
+  distance: "10px",
+  interval: 200,
 });
 
 ScrollReveal().reveal(".home .info .btn, .about-info .btn", {
   delay: 700,
   origin: "bottom",
-  interval: 300
+  interval: 300,
 });
 
-ScrollReveal().reveal(".media-icons i, .contact-left li ", { delay: 500,
+ScrollReveal().reveal(".media-icons i, .contact-left li ", {
+  delay: 500,
   origin: "left",
-  interval: 200
+  interval: 200,
 });
 
 ScrollReveal().reveal(".home-img, .about-img", {
   delay: 500,
-  origin: "bottom"
+  origin: "bottom",
 });
 
 ScrollReveal().reveal(".about .description, .copy-right", {
   delay: 600,
-  easing:'ease-in-out',
-  distance:'10px',
-  origin: "right"
-});
-
-ScrollReveal().reveal(".about .professional-list li, .about .professional-list", {
-  delay: 500,
+  easing: "ease-in-out",
+  distance: "10px",
   origin: "right",
-  easing:'ease-in-out',
-  distance:'10px',
-  interval: 200
 });
 
-ScrollReveal().reveal(".skills-description, .services-description, .contact-left h2", {
-  delay: 700,
-  easing:'ease-in-out',
-  distance:'10px',
-  origin: "right"
-});
+ScrollReveal().reveal(
+  ".about .professional-list li, .about .professional-list",
+  {
+    delay: 500,
+    origin: "right",
+    easing: "ease-in-out",
+    distance: "10px",
+    interval: 200,
+  }
+);
+
+ScrollReveal().reveal(
+  ".skills-description, .services-description, .contact-left h2",
+  {
+    delay: 700,
+    easing: "ease-in-out",
+    distance: "10px",
+    origin: "right",
+  }
+);
 
 ScrollReveal().reveal(".contact-right p, input, textarea", {
   delay: 700,
   origin: "right",
-  easing:'ease-in-out',
-  distance:'10px',
-  interval:200
+  easing: "ease-in-out",
+  distance: "10px",
+  interval: 200,
 });
 ScrollReveal().reveal(".contact-right p", {
   delay: 700,
   origin: "left",
-  interval:200
+  interval: 200,
 });
-ScrollReveal().reveal(".experience-card, .service-card, .education, .protfolio, .img-card, .contact-form .btn, .contact-card", {
-  delay: 800,
-  origin: "bottom",
-  interval:200
-});
+ScrollReveal().reveal(
+  ".service-card, .education, .protfolio, .img-card, .contact-form .btn, .contact-card",
+  {
+    delay: 800,
+    origin: "bottom",
+    interval: 200,
+  }
+);
 
-ScrollReveal().reveal("footer .group, .follow-group, .footer-copyright, .scroll-down", {
-  delay: 900,
-  origin: "top",
-  interval:300
-});
-
+ScrollReveal().reveal(
+  "footer .group, .follow-group, .footer-copyright, .scroll-down, .experience-card",
+  {
+    delay: 900,
+    origin: "top",
+    interval: 200,
+  }
+);

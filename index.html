@@ -50,8 +50,12 @@
     <section class="home flex-center" id="home">
       <div class="home-container">
         <div class="media-icons">
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/balasubramaniam-k-r-464865250/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/balakrbs"
+            ><i class="fab fa-github"></i
+          ></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="info">
@@ -115,7 +119,11 @@
                 <span>Success <br />Project</span>
               </li>
             </ul>
-            <a href="./Documents/BalasubramaniamKRResume.pdf" class="btn" download>Download CV <i class="fas fa-download"></i
+            <a
+              href="./Documents/BalasubramaniamKRResume.pdf"
+              class="btn"
+              download
+              >Download CV <i class="fas fa-download"></i
             ></a>
           </div>
         </div>
@@ -586,23 +594,43 @@
               Lorem ipsum dolor sit amet, consectetur <br />
               adipisicing elit. <span> Et, sequi!</span>
             </p>
-            <form action="" class="contact-form">
+            <form method="POST" class="contact-form" id="contact-form">
               <div class="first-row">
-                <input type="text" placeholder="Name" />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
               </div>
               <div class="second-row">
-                <input type="email" placeholder="Email" />
-                <input type="text" placeholder="Subject" />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
               </div>
               <div class="third-row">
                 <textarea
                   name="message"
-                  id=""
+                  id="message"
+                  name="message"
                   rows="7"
                   placeholder="Message"
+                  required
                 ></textarea>
               </div>
-              <button class="btn" type="submit">
+              <button class="btn" type="submit" onclick="sendMail(event)">
                 Send Message <i class="fas fa-paper-plane"></i>
               </button>
             </form>
@@ -634,11 +662,22 @@
         <div class="follow-group">
           <h3>Follow</h3>
           <ul>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/balasubramaniam-k-r-464865250/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/balakrbs"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
           </ul>
-        </div>        
+        </div>
       </div>
       <div class="footer-copyright">
         <p>© 2024 by Bala-krbs. All rights reserved</p>
@@ -648,5 +687,16 @@
     <!--==========External script=========-->
 
     <script src="./main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "CQeSmKuNTMs6jcA2B",
+        });
+      })();
+    </script>
   </body>
 </html>
