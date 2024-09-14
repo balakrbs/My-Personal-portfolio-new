@@ -1083,7 +1083,7 @@ footer a {
 }
 /* ========Media query max-width 730px========= */
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 730px) {
   /* ========Common style for all sections========= */
   body {
     margin: 5rem 0 0 0;
