@@ -262,7 +262,7 @@ header.sticky .nav-bar {
   position: relative;
 }
 .home-container .home-img img {
-  width: 80%;
+  width: 100%;
   margin-left: 50px;
   transform: translate(0, 0);
 }
