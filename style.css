@@ -621,18 +621,31 @@ header.sticky .nav-bar {
   cursor: pointer;
 }
 .service-modal-body h3 {
-  font-size: 2em;
+  font-size: 2em;margin-bottom: 10px;
 }
 .service-modal-body h4 {
+  font-style: italic;
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 400;
   margin: 15px 0 10px;
 }
 .service-modal-body ul li {
   margin-top: 15px;
+  font-weight: 800;
 }
 .service-modal-body ul li i {
   color: var(--second-color);
+  margin-right: 10px;
+}
+.service-modal-body ul li a{
+  padding: 3px 15px;
+  font-weight: 600;
+  margin: 0;
+}
+.service-modal-body ul li span{
+  position: relative;
+  font-size: 0.8em;
+  font-weight: 400;
 }
 
 /* ========Portfolio section========= */
@@ -716,11 +729,12 @@ header.sticky .nav-bar {
   background: var(--model-bg-color);
   max-width: 600px;
   margin: 20px;
-  padding: 40px;
+  padding: 25px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   transform: translateY(-50px);
   transition: 0.5s ease;
+  text-align: center;
 }
 .portfolio-model.active .portfolio-model-body {
   transform: translateY(0px);
@@ -733,19 +747,29 @@ header.sticky .nav-bar {
   cursor: pointer;
 }
 .portfolio-model-body h3{
-  font-size: 1.5em;
+  font-size: 1.5em;  
+  text-align: left;
 }
-.portfolio-model-body {
+.portfolio-model-body p{
   font-size: 1em;
+  text-align: left;
 }
-
-.portfolio-model-body video {
-  width: 100%;
+.portfolio-model-body img {
+  width: 90%;
   margin: 20px 0;
   border-radius: 10px;
   filter: brightness(0.80);
 }
-
+.portfolio-model-body video {
+  width: 80%;
+  margin: 20px 0;
+  border-radius: 10px;
+  filter: brightness(0.80);
+}
+.portfolio-model-body a{
+  padding: 5px 20px;
+  text-align: center;
+}
 /* ========Get-in-touch========= */
 
 .get-in-touch {
