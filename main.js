@@ -139,7 +139,7 @@ navItems.forEach((navItem) => {
 //contact Email Message
 
 function sendMail(event) {
-  event.preventDefault(); // Prevent default form submission
+  event.preventDefault();
 
   let params = {
     name: document.getElementById("name").value,
@@ -152,10 +152,7 @@ function sendMail(event) {
     .send("service_toz1f4h", "template_cjerzap", params)
     .then(() => {
       alert("Email Sent!!");
-      location.reload(); // Reset the form fields
-
-      // Optional: Reload the page if you want full refresh
-      // location.reload();
+      location.reload();
     })
     .catch((error) => {
       console.error("Email sending failed:", error);
@@ -187,7 +184,7 @@ ScrollReveal().reveal(".home .info h3, .home .info p, .theme-btn", {
 ScrollReveal().reveal(".home .info .btn, .about-info .btn", {
   delay: 700,
   origin: "bottom",
-  interval: 300,
+  interval: 200,
 });
 
 ScrollReveal().reveal(".media-icons i, .contact-left li ", {
