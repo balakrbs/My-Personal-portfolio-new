@@ -212,7 +212,7 @@ ScrollReveal().reveal(
     origin: "right",
     easing: "ease-in-out",
     distance: "10px",
-    interval: 200,
+    interval: 300,
   }
 );
 
@@ -252,6 +252,7 @@ ScrollReveal().reveal(
   {
     delay: 900,
     origin: "top",
+    distance: "50px",
     interval: 200,
   }
 );

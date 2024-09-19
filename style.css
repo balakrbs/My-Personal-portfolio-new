@@ -225,7 +225,7 @@ header.sticky .nav-bar {
   color: var(--third-color);
 }
 .home-container .info h2 .name {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 600;
   line-height: 70px;
   color: var(--first-color);
@@ -262,7 +262,7 @@ header.sticky .nav-bar {
   position: relative;
 }
 .home-container .home-img img {
-  width: 100%;
+  width: 90%;
   margin-left: 50px;
   transform: translate(0, 0);
 }
@@ -380,17 +380,23 @@ header.sticky .nav-bar {
 .about-info .professional-list .list-item {
   display: flex;
   justify-content: center;
-  align-items: center;
   column-gap: 15px;
   margin-bottom: 20px;
 }
 .about-info .professional-list .list-item h3 {
-  font-size: 2.5em;
+  font-size: 1.6em;
   font-weight: 700;
+  color: var(--second-color);
 }
-.about-info .professional-list .list-item span {
+.about-info .professional-list .list-item p{
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 24px;
+}
+.about-info .professional-list .list-item p span {
   color: var(--third-color);
-  font-size: var(--small-font-size);
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
 /* ========Skills section========= */
@@ -414,10 +420,10 @@ header.sticky .nav-bar {
   gap: 20px;
   margin: 0 auto;
 }
-.skills-info h4 {
+.skills-info h4, .skills-info-experience h4 {
   margin-bottom: 20px;
 }
-.skills-info h4 label {
+.skills-info h4 label, .skills-info-experience h4 label{
   background: var(--second-color);
   color: #fff;
   font-size: var(--normal-font-size);
@@ -502,10 +508,17 @@ header.sticky .nav-bar {
 .bar .database:before {
   width: 70%;
 }
+.skills-info-experience{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  gap: 40px;
+  margin: 0 auto;
+}
 .experience-card {
   background: var(--card-bg-color);
   border-bottom: 3px solid var(--second-color);
-  padding: 35px;
+  padding: 20px;
   border-radius: 6px;
   box-shadow: var(--box-shadow);
   transition: 0.3s ease;
@@ -638,7 +651,7 @@ header.sticky .nav-bar {
   margin-right: 10px;
 }
 .service-modal-body ul li a{
-  padding: 3px 15px;
+  padding: 2px 15px;
   font-weight: 600;
   margin: 0;
 }
@@ -729,7 +742,7 @@ header.sticky .nav-bar {
   background: var(--model-bg-color);
   max-width: 600px;
   margin: 20px;
-  padding: 25px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   transform: translateY(-50px);
