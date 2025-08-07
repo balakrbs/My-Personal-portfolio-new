@@ -502,6 +502,9 @@ header.sticky .nav-bar {
 .bar .cprogram:before {
   width: 70%;
 }
+.bar .wordpress:before {
+  width: 70%;
+}
 .bar .spring:before {
   width: 65%;
 }
@@ -514,6 +517,7 @@ header.sticky .nav-bar {
   grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
   gap: 40px;
   margin: 0 auto;
+  justify-content: center;
 }
 .experience-card {
   background: var(--card-bg-color);
