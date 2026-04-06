@@ -170,11 +170,11 @@ ScrollReveal({
 //Target elements, and specify options to create reveal animations
 
 ScrollReveal().reveal(".home .info h2, .section-title-01, .section-title-02", {
-  delay: 500,
+  delay: 300,
   origin: "left",
 });
 ScrollReveal().reveal(".home .info h3, .home .info p, .theme-btn", {
-  delay: 600,
+  delay: 400,
   origin: "right",
   easing: "ease-in-out",
   distance: "10px",
@@ -182,24 +182,24 @@ ScrollReveal().reveal(".home .info h3, .home .info p, .theme-btn", {
 });
 
 ScrollReveal().reveal(".home .info .btn, .about-info .btn", {
-  delay: 700,
+  delay: 400,
   origin: "bottom",
   interval: 200,
 });
 
 ScrollReveal().reveal(".media-icons i, .contact-left li ", {
-  delay: 500,
+  delay: 400,
   origin: "left",
   interval: 200,
 });
 
 ScrollReveal().reveal(".home-img, .about-img", {
-  delay: 500,
+  delay:400,
   origin: "bottom",
 });
 
 ScrollReveal().reveal(".about .description, .copy-right", {
-  delay: 600,
+  delay: 400,
   easing: "ease-in-out",
   distance: "10px",
   origin: "right",
@@ -208,7 +208,7 @@ ScrollReveal().reveal(".about .description, .copy-right", {
 ScrollReveal().reveal(
   ".about .professional-list li, .about .professional-list",
   {
-    delay: 500,
+    delay: 300,
     origin: "right",
     easing: "ease-in-out",
     distance: "10px",
@@ -219,7 +219,7 @@ ScrollReveal().reveal(
 ScrollReveal().reveal(
   ".skills-description, .services-description, .contact-left h2",
   {
-    delay: 700,
+    delay: 400,
     easing: "ease-in-out",
     distance: "10px",
     origin: "right",
@@ -227,21 +227,21 @@ ScrollReveal().reveal(
 );
 
 ScrollReveal().reveal(".contact-right p, input, textarea", {
-  delay: 700,
+  delay: 400,
   origin: "right",
   easing: "ease-in-out",
   distance: "10px",
   interval: 200,
 });
 ScrollReveal().reveal(".contact-right p", {
-  delay: 700,
+  delay: 400,
   origin: "left",
   interval: 200,
 });
 ScrollReveal().reveal(
   ".service-card, .education, .protfolio, .img-card, .contact-form .btn, .contact-card",
   {
-    delay: 800,
+    delay: 400,
     origin: "bottom",
     interval: 200,
   }
@@ -250,7 +250,7 @@ ScrollReveal().reveal(
 ScrollReveal().reveal(
   "footer .group, .follow-group, .footer-copyright, .scroll-down, .experience-card",
   {
-    delay: 900,
+    delay: 400,
     origin: "top",
     distance: "50px",
     interval: 200,

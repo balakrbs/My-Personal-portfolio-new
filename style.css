@@ -1194,7 +1194,7 @@ footer a {
     gap: 30px;
   }
   .home-container {
-    margin-top: -3em;
+    margin-top: -1em;
   }
   .home-container .home-img {
     position: absolute;
@@ -1238,15 +1238,25 @@ footer a {
 }
   /* ========Get-in-touch section========= */
   .get-in-touch .contact-card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .contact-card .title {
     font-size: 1rem;
+    text-align: center;
     line-height: 40px;
   }
   .contact-card .contact-btn .btn {
     font-size: 1rem;
-    margin-left: 25%;
+    margin-left: 0;
+  }
+  .contact-card .title h3{
+    font-size: 1.6em;
+  }
+  .contact-card .title h2{
+    font-size: 1.8em;
   }
   /* ========footer section========= */
   .footer-container .about p{
