@@ -1159,6 +1159,7 @@ footer a {
     margin-bottom: 50px;
   }
   .footer-container info ul {
+    display: flex;
     align-items: center;
     flex-direction: column;
   }
@@ -1193,7 +1194,7 @@ footer a {
     gap: 30px;
   }
   .home-container {
-    margin-top: -5em;
+    margin-top: -3em;
   }
   .home-container .home-img {
     position: absolute;
